@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动测温: "/>
+
+                <Switch
+                    android:id="@+id/auto_test_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/test_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="测温" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NTC校准: " />
+
+                <EditText
+                    android:id="@+id/ntc_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="8dp"
+                    android:inputType="numberDecimal"
+                    android:text="25.0"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/fillet_edit"/>
+
+                <Button
+                    android:id="@+id/ntc_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="开始校准" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="低温校准: " />
+
+                <EditText
+                    android:id="@+id/low_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="8dp"
+                    android:inputType="numberDecimal"
+                    android:text="33.0"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/fillet_edit"/>
+
+                <Button
+                    android:id="@+id/low_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="开始校准"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高温校准: " />
+
+                <EditText
+                    android:id="@+id/high_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:inputType="numberDecimal"
+                    android:text="42.0"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/fillet_edit"/>
+
+                <Button
+                    android:id="@+id/high_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="开始校准"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="?android:attr/listDivider"
+        android:layout_height="2dp" />
+
+    <TextView
+        android:id="@+id/receive_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:freezesText="true"
+        android:gravity="bottom"
+        android:scrollbars="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:typeface="monospace" />
+
+</LinearLayout>
+
