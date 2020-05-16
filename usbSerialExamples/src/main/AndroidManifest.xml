@@ -4,6 +4,9 @@
     package="com.hoho.android.usbserial.examples">
 
     <!-- mipmap/ic_launcher created with Android Studio -> New -> Image Asset using @color/colorPrimary and USB clip art -->
+    <uses-feature  android:name="android.hardware.usb.host" />
+    <uses-permission android:name="android.hardware.usb.accessory" />
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

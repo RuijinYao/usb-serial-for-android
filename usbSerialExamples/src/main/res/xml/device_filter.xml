@@ -26,5 +26,5 @@
     <usb-device vendor-id="7855" product-id="4"    /> <!-- 0x1eaf / 0x0004: Leaflabs Maple -->
     <usb-device vendor-id="3368" product-id="516"  /> <!-- 0x0d28 / 0x0204: ARM mbed -->
 
-    <usb-device vendor-id="1421" product-id="46388‬"  />
+    <usb-device vendor-id="1241" product-id="46388‬"  />
 </resources>
